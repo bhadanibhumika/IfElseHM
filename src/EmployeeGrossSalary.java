@@ -9,24 +9,28 @@ public class EmployeeGrossSalary {
 
     //main method
     public static void main(String[] args) {
-        read();//calling in main method
-        calculate();// calling in main method
+        EmployeeGrossSalary employeeGrossSalary = new EmployeeGrossSalary(); // create obj for non static method
+       employeeGrossSalary.read(); //calling in main method
+       employeeGrossSalary.calculate(); // calling in main method
     }
     //read method
-    public static void read()
+    public  void read()
     {
         Scanner scanner = new Scanner(System.in);
+
         System.out.println("Enter the employee id:");//input for user
         employeid = scanner.nextLine();      //using scanner obj for variable employee id
+
         System.out.println("Enter the employee name :");
         emname = scanner.nextLine();       // using scanner obj for variable em name
+
         System.out.println("Enter the Basic salary :");
         basicsalary=scanner.nextInt();  //using scanner obj for variable basic salary
 
         //calculate method
     }
     // main method
-    public  static void calculate(){
+    public   void calculate(){
         HRA=(basicsalary*10)/100; //HRA=10%
         DA=(basicsalary*8)/100; //DA =8%
         TA=(basicsalary*9)/100; //TA = 9%

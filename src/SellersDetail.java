@@ -19,27 +19,27 @@ public class SellersDetail {
         //if sales amount is more than 50000
        if(amount>=50000)
        {
-           System.out.println("your commission is 35%");
+           System.out.println("your commission is = " +  (amount*35/100));
        }
        //if amount is more than 30000
        else if (amount>=30000)
        {
-           System.out.println("Your commission is 20%");
+           System.out.println("Your commission is = "+ (amount*20/100));
        }
        //if amount is more than 200000
        else if (amount>=20000)
        {
-           System.out.println("Your commission is 10%");
+           System.out.println("Your commission is = "+(amount*10/100));
        }
        //if amount is more than 10000
        else if (amount>=10000)
        {
-           System.out.println("Your commission is 5%");
+           System.out.println("Your commission is = "+ (amount*5/100));
 
        }
        //if amount is less than 10000
        else if (amount<10000) {
-           System.out.println("Your commission is 2%");
+           System.out.println("Your commission is = "+ (amount*2/100));
        }
        else
        {

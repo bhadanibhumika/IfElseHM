@@ -1,6 +1,7 @@
 import java.util.Scanner;
 
 public class MarkSheet {
+    // create score method
     public  void score() {
         Scanner scanner = new Scanner(System.in);// creating scanner obj for user
 
