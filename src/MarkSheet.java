@@ -20,7 +20,14 @@ public class MarkSheet {
         System.out.println("please enter science marks: ");
         int science = scanner.nextInt();// use scanner obj for science marks
 
-         int total = (english+maths+science);// create variable t0tal for total marks
+        System.out.println("Student name = "+ name);// for name
+        System.out.println("roll number = "+ roll); // print for roll number
+        System.out.println("english: "+english);//print for english sub
+        System.out.println("maths: "+maths);   // print for maths sub
+        System.out.println("science: "+science);// print for science sub
+
+
+         int total = (english+maths+science);// create variable total for total marks
         System.out.println("Total marks: "+total);
 
         float percentage = (total/3);//create variable per for per
@@ -60,7 +67,7 @@ public class MarkSheet {
     }
 
     public static void main(String[] args) {
-        MarkSheet markSheet = new MarkSheet(); // creat obj for static method
+        MarkSheet markSheet = new MarkSheet(); // create obj for static method
         markSheet.score();// calling score method in main method
 
     }

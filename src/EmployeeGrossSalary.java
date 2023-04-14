@@ -27,6 +27,10 @@ public class EmployeeGrossSalary {
         System.out.println("Enter the Basic salary :");
         basicsalary=scanner.nextInt();  //using scanner obj for variable basic salary
 
+        System.out.println("employee id: "+employeid);//print for id
+        System.out.println("employee Name: "+emname); //print for name
+        System.out.println("employee basic salary: "+basicsalary);// print for basic salary
+
         //calculate method
     }
     // main method
@@ -37,8 +41,5 @@ public class EmployeeGrossSalary {
         PF=(basicsalary*20)/100; //PF = 20%
         Grosssalary=(basicsalary+HRA+DA+TA-PF);
         System.out.println("Gross salary =" + Grosssalary);
-
     }
-
-
 }

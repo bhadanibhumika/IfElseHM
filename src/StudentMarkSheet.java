@@ -18,11 +18,18 @@ public class StudentMarkSheet {
         eng = scanner.nextInt();
         sci = scanner.nextInt();
 
-        int total = math+eng+sci;// create variable total
-        System.out.println("Total Marks :"+(math+eng+sci)); // for total marks
+      //  int total = math+eng+sci;// create variable total
+       // System.out.println("Total Marks :"+(math+eng+sci)); // for total marks
 
-        float perc =(total/3);
-        System.out.println("percentage: "+perc);
+        System.out.println("name: "+name);// for print name
+        System.out.println("Roll number : "+roll); // for print roll number
+        System.out.println("mark of subjects math,eng,sci ="+math+" "+eng+" "+sci);
+
+         int total = math+eng+sci;// create variable total
+         System.out.println("Total Marks :"+(math+eng+sci)); // for total marks
+
+     //   float perc =(total/3);
+      //  System.out.println("percentage: "+perc);
 
         //if maths english and sci marks more than 35
         if(math>=35 && eng>=35 && sci>=35)
